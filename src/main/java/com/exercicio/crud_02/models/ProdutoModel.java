@@ -18,6 +18,9 @@ public class ProdutoModel {
     private BigDecimal preco;
     private Integer estoque;
 
+    public ProdutoModel() {
+    }
+
     public ProdutoModel(Long id, String nome, BigDecimal preco, Integer estoque) {
         this.id = id;
         this.nome = nome;

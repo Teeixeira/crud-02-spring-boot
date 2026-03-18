@@ -26,7 +26,7 @@ public class ProdutoController {
 
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                 .path("/{id}")
-                .buildAndExpand(produtoModel.getId())
+                .buildAndExpand(produto.getId())
                 .toUri();
 
         return ResponseEntity.ok().body(produto);
